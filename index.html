@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abaris</title>
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/slyle.css" />
+    <link rel="stylesheet" href="./styles/media.css" />
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=63af8949-6ea7-4dd8-b0e1-4ceb9027d452&lang=ru_RU"
+      type="text/javascript"
+    ></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header__top">
+          <div class="header__top-left">
+            <a href="/" class="header__top-logo">
+              <img src="./images/logo.svg" alt="logo" />
+            </a>
+            <a class="header__top-phone" href="tel:84957984475"
+              >8 (495) 798-44-75</a
+            >
+          </div>
+          <div class="header__top-right">
+            <div class="header__top-user">
+              <img src="./images/user.svg" alt="user" />
+              <span>Войти</span>
+            </div>
+            <div class="header__top-buccet">
+              <img src="./images/buccet.svg" alt="buccet" />
+              <span>Корзина</span>
+            </div>
+          </div>
+          <div class="burger">
+            <div class="burger__line"></div>
+            <div class="burger__line"></div>
+            <div class="burger__line"></div>
+          </div>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li class="dropdown"><p>Услуги</p></li>
+            <li><a href="#">Цены</a></li>
+            <li><a href="#">Сувенирная продукция</a></li>
+            <li><a href="#">Требования к макетам</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Портфолио</a></li>
+            <li><a href="#">Доставка и оплата</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <img class="arrow-menu" src="./images/arrow_menu.svg" alt="arrow" />
+          <div class="drop-menu">
+            <div class="drop-menu__wrapper">
+              <div class="drop-menu__item">
+                <div class="drop-menu__item-title">
+                  <p>Широкоформатная печать</p>
+                  <img src="./images/arrow-red.svg" alt=" arrow" />
+                </div>
+                <ul>
+                  <li><a href="#">печать на баннере</a></li>
+                  <li><a href="#">транслюцентный баннер</a></li>
+                  <li><a href="#">строительные баннера</a></li>
+                  <li><a href="#">на сетке</a></li>
+                  <li><a href="#">на пленке</a></li>
+                  <li><a href="#">на ткани</a></li>
+                </ul>
+              </div>
+              <div class="drop-menu__item">
+                <div class="drop-menu__item-title">
+                  <p>Интерьерная печать</p>
+                  <img src="./images/arrow-red.svg" alt=" arrow" />
+                </div>
+
+                <ul>
+                  <li><a href="#">на пленке</a></li>
+                  <li><a href="#">на ткани</a></li>
+                  <li><a href="#">на сетке</a></li>
+                  <li><a href="#">на бэклите</a></li>
+                  <li><a href="#">прозрачная пленка, ламинация</a></li>
+                  <li><a href="#">на пленке с черным клеевым слоем</a></li>
+                  <li><a href="#">на перфорированной пленке</a></li>
+                </ul>
+              </div>
+              <div class="drop-menu__item">
+                <div class="drop-menu__item-title">
+                  <p>УФ печать</p>
+                  <img src="./images/arrow-red.svg" alt=" arrow" />
+                </div>
+
+                <ul>
+                  <li><a href="#">на пластике</a></li>
+                  <li><a href="#">на пенокартоне</a></li>
+                  <li><a href="#">на оргстекле</a></li>
+                  <li><a href="#">на полистироле</a></li>
+                  <li><a href="#">на сотовом поликарбонате</a></li>
+                  <li><a href="#">на монолитном поликарбонате</a></li>
+                  <li><a href="#">на магнитном виниле</a></li>
+                  <li><a href="#">на ковролине</a></li>
+                  <li><a href="#">на дереве</a></li>
+                  <li><a href="#">на металле</a></li>
+                  <li><a href="#">на гофрокартоне</a></li>
+                  <li><a href="#">на композите</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero__wrapper">
+            <div class="hero__info">
+              <h1>Печать для вашего бизнеса</h1>
+              <p>
+                Мы создаем рекламные баннеры, вывески, декоративные элементы и
+                интерьерные решения любой сложности. Используем только
+                современное оборудование и качественные материалы, чтобы ваши
+                проекты выглядели ярко и долговечно.
+              </p>
+              <div class="hero__buttons">
+                <a href="#">Онлайн расчет</a>
+                <a href="#">Услуги</a>
+              </div>
+            </div>
+            <div class="hero__carousel">
+              <div class="swiper-container" id="slider1">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./images/slider1_img1.png" alt="image" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/slider2_img2.png" alt="image" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/slider2_img3.png" alt="image" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/slider2_img4.png" alt="image" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/slider2_img5.png" alt="image" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/slider2_img6.png" alt="image" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/slider2_img3.png" alt="image" />
+                  </div>
+                </div>
+                <div class="swiper-pagination swiper-pagination--1"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="advantages">
+        <div class="container">
+          <h2>Наши преимущества</h2>
+          <div class="advantages__list">
+            <div class="advantages__item">
+              <h3>Высокое качество печати</h3>
+              <p>
+                Мы используем современное оборудование и проверенные материалы,
+                чтобы гарантировать четкость, насыщенные цвета и стойкость
+                каждой печатной продукции.
+              </p>
+            </div>
+            <div class="advantages__item">
+              <h3>Быстрая обработка заказов</h3>
+              <p>
+                Оперативное выполнение задач — одно из наших главных
+                приоритетов. Мы ценим ваше время и обеспечиваем быстрые сроки
+                исполнения.
+              </p>
+            </div>
+            <div class="advantages__item">
+              <h3>Индивидуальный подход</h3>
+              <p>
+                Наши специалисты помогут подобрать подходящий формат, материалы
+                и варианты отделки, учитывая все ваши пожелания.
+              </p>
+            </div>
+            <div class="advantages__item">
+              <h3>Доступные цены</h3>
+              <p>
+                Мы стремимся предлагать лучшие решения по оптимальной стоимости,
+                сохраняя при этом высокие стандарты качества и сервиса.
+              </p>
+            </div>
+            <div class="advantages__item">
+              <h3>Экологичность и ответственность</h3>
+              <p>
+                Мы заботимся об окружающей среде, поэтому используем безопасные
+                чернила и перерабатываемые материалы, минимизируя воздействие на
+                природу.
+              </p>
+            </div>
+            <div class="advantages__item">
+              <h3>Собственное производство</h3>
+              <p>
+                От неоновых вывесок до больших тиражей широкофрматных баннеров —
+                у нас вы найдете все, что нужно для вас или вашего бизнеса.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="services">
+        <div class="container">
+          <h2>Виды работ</h2>
+          <div class="services__wrapper">
+            <div class="services__list">
+              <div class="services__item">
+                <div class="services__item-icon">
+                  <img src="./images/services_icon_1.svg" alt="icon" />
+                </div>
+                <div class="services__item-text">
+                  <h3>Широкоформатная печать</h3>
+                  <a href="#">Подробнее</a>
+                </div>
+              </div>
+              <div class="services__item">
+                <div class="services__item-icon">
+                  <img src="./images/services_icon_2.svg" alt="icon" />
+                </div>
+                <div class="services__item-text">
+                  <h3>Интерьерная печать</h3>
+                  <a href="#">Подробнее</a>
+                </div>
+              </div>
+              <div class="services__item">
+                <div class="services__item-icon">
+                  <img src="./images/services_icon_3.svg" alt="icon" />
+                </div>
+                <div class="services__item-text">
+                  <h3>УФ печать</h3>
+                  <a href="#">Подробнее</a>
+                </div>
+              </div>
+              <div class="services__item">
+                <div class="services__item-icon">
+                  <img src="./images/services_icon_4.svg" alt="icon" />
+                </div>
+                <div class="services__item-text">
+                  <h3>Гибкий неон</h3>
+                  <a href="#">Подробнее</a>
+                </div>
+              </div>
+              <div class="services__item">
+                <div class="services__item-icon">
+                  <img src="./images/services_icon_5.svg" alt="icon" />
+                </div>
+                <div class="services__item-text">
+                  <h3>Изготовление объемных букв</h3>
+                  <a href="#">Подробнее</a>
+                </div>
+              </div>
+              <div class="services__item">
+                <div class="services__item-icon">
+                  <img src="./images/services_icon_6.svg" alt="icon" />
+                </div>
+                <div class="services__item-text">
+                  <h3>Дополнительные услуги</h3>
+                  <a href="#">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="services__image">
+              <img src="./images/services_img.png" alt="image" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <section class="calculator">
+        <div class="container">
+          <h2>Онлайн калькулятор</h2>
+          <p>
+            Рассчитайте стоимость за несколько секунд. Выберите тип продукции,
+            параметры печати  и тираж — и получите точный расчет, чтобы
+            планировать бюджет без сюрпризов.
+          </p>
+        </div>
+      </section> -->
+      <section class="form form1">
+        <div class="container">
+          <div class="form__wpapper form1__wpapper">
+            <div class="form__wrapper-info form1__wrapper-info">
+              <h2>Услуги дизайнера</h2>
+              <p>
+                Если у вас нет готового макета или требуется доработка
+                существующего, мы готовы помочь. Наши дизайнеры разработают
+                профессиональный макет, который идеально подойдет для печати  и
+                будет полностью соответствовать нашим требованиям и вашим
+                ожиданиям.
+              </p>
+              <form>
+                <div class="inputs">
+                  <input
+                    type="text"
+                    id="name1"
+                    name="name1"
+                    placeholder="Имя"
+                  />
+                  <input
+                    type="tel"
+                    id="phone1"
+                    name="phone1"
+                    placeholder="Номер телефона"
+                  />
+                  <input
+                    type="text"
+                    id="mail1"
+                    name="mail1"
+                    placeholder="Электронная почта"
+                  />
+                </div>
+                <div class="checkbox">
+                  <input
+                    type="checkbox"
+                    id="consent1"
+                    name="consent1"
+                    required
+                  />
+                  <label for="consent1"
+                    >Согласие на обработку персональных данных</label
+                  >
+                </div>
+
+                <button>Заказать звонок</button>
+              </form>
+            </div>
+            <div class="form__wrapper-img form1__wrapper-img">
+              <img src="./images/form_1_img.png" alt="image" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="portfolio">
+        <div class="container">
+          <h2>Наши работы</h2>
+          <div class="portfolio__slider">
+            <div class="swiper-container" id="slider2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./images/slider2_img1.png" alt="image" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/slider2_img2.png" alt="image" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/slider2_img3.png" alt="image" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/slider2_img4.png" alt="image" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/slider2_img5.png" alt="image" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/slider2_img6.png" alt="image" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/slider2_img3.png" alt="image" />
+                </div>
+              </div>
+              <div class="swiper-pagination swiper-pagination--2"></div>
+            </div>
+          </div>
+          <a href="#">Перейти в портфолио</a>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="container">
+          <h2>Что говорят наши клиенты</h2>
+          <div class="reviews__list">
+            <div class="reviews__item">
+              <h3>Анна Б.</h3>
+              <p>
+                Заказываем в ABARIS уже не первый раз, и каждый раз результат
+                превосходит ожидания! Визитки и буклеты всегда с безупречной
+                печатью, а цвета идеально совпадают с нашими фирменными. Сроки
+                всегда соблюдают, даже когда делаем срочные заказы. Огромное
+                спасибо за ваш профессионализм!
+              </p>
+            </div>
+            <div class="reviews__item">
+              <h3>Иван С.</h3>
+              <p>
+                Очень понравился подход к клиенту! Заказывал каталоги для
+                магазина, и специалисты ABARIS помогли подобрать подходящую
+                бумагу и отделку, чтобы каталог смотрелся дорого и стильно. Весь
+                процесс, от обсуждения до получения готовой продукции, прошел
+                легко и быстро. Рекомендую!
+              </p>
+            </div>
+            <div class="reviews__item">
+              <h3>Мария Л.</h3>
+              <p>
+                Искала типографию для печати дипломов и грамот, и рада, что
+                выбрала ABARIS. Качество просто отличное — плотная бумага,
+                приятная на ощупь, и никакого размытия текста. Спасибо за
+                оперативность и вежливое общение! Теперь обращаюсь только к вам.
+              </p>
+            </div>
+          </div>
+          <a href="#">Оставить отзыв</a>
+        </div>
+      </section>
+      <section class="form form2">
+        <div class="container">
+          <div class="form__wpapper form2__wpapper">
+            <div class="form__wrapper-info form2__wrapper-info">
+              <h2>Запланируйте свой проект с нами!</h2>
+              <p>
+                Хотите узнать больше о наших услугах или уточнить детали заказа?
+                Свяжитесь с нами для личной консультации — вместе мы найдем
+                лучшее решение для вас.
+              </p>
+              <form>
+                <div class="inputs">
+                  <input
+                    type="text"
+                    id="name2"
+                    name="name2"
+                    placeholder="Имя"
+                  />
+                  <input
+                    type="tel"
+                    id="phone2"
+                    name="phone2"
+                    placeholder="Номер телефона"
+                  />
+                  <input
+                    type="text"
+                    id="mail2"
+                    name="mail2"
+                    placeholder="Электронная почта"
+                  />
+                </div>
+                <div class="checkbox">
+                  <input
+                    type="checkbox"
+                    id="consent2"
+                    name="consent2"
+                    required
+                  />
+                  <label for="consent2"
+                    >Согласие на обработку персональных данных</label
+                  >
+                </div>
+
+                <button>Заказать звонок</button>
+              </form>
+            </div>
+            <div class="form__wrapper-img form2__wrapper-img">
+              <img src="./images/form_2_img.png" alt="image" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="delivery">
+        <div class="container">
+          <h2>Доставка и оплата</h2>
+          <div class="delivery__wrapper">
+            <div class="delivery__receive">
+              <h3>Способы получения заказа</h3>
+              <div class="delivery__item">
+                <div class="delivery__item-icon">
+                  <img src="./images/delivery_icon_1.svg" alt="icon" />
+                </div>
+                <div class="delivery__item-text">
+                  <p>Самовывоз из офиса</p>
+                  <span>г. Люберцы, ул. Красная, д. 1, лит. У.</span>
+                </div>
+              </div>
+              <div class="delivery__item">
+                <div class="delivery__item-icon">
+                  <img src="./images/delivery_icon_2.svg" alt="icon" />
+                </div>
+                <div class="delivery__item-text">
+                  <p>Курьером по Москве и МО</p>
+                  <span>Курьерская служба Яндекс.GO</span>
+                </div>
+              </div>
+              <div class="delivery__item">
+                <div class="delivery__item-icon">
+                  <img src="./images/delivery_icon_3.svg" alt="icon" />
+                </div>
+                <div class="delivery__item-text">
+                  <p>Доставка в регионы РФ</p>
+                  <span>Траннспортной компанией СДЭК</span>
+                </div>
+              </div>
+            </div>
+            <div class="delivery__payment">
+              <h3>Способы оплаты</h3>
+              <div class="delivery__item">
+                <div class="delivery__item-icon">
+                  <img src="./images/delivery_icon_4.svg" alt="icon" />
+                </div>
+                <div class="delivery__item-text">
+                  <p>Банковской картой на сайте</p>
+                  <span>Visa, Mastercard, Мир, SberPay</span>
+                </div>
+              </div>
+              <div class="delivery__item">
+                <div class="delivery__item-icon">
+                  <img src="./images/delivery_icon_5.svg" alt="icon" />
+                </div>
+                <div class="delivery__item-text">
+                  <p>Наличными при получении</p>
+                  <span>В пункте самовывоза</span>
+                </div>
+              </div>
+              <div class="delivery__item">
+                <div class="delivery__item-icon">
+                  <img src="./images/delivery_icon_6.svg" alt="icon" />
+                </div>
+                <div class="delivery__item-text">
+                  <p>Картой при получении</p>
+                  <span>В пункте самовывоза</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#">Подробнее</a>
+        </div>
+      </section>
+      <section class="faq">
+        <div class="container">
+          <h2>Часто задаваемые вопросы</h2>
+          <div class="faq__list">
+            <div class="faq__column">
+              <div class="faq__item">
+                <div class="faq__header" data-toggle="#faq1">
+                  <p>Какой минимальный тираж можно заказать?</p>
+                </div>
+                <div class="faq__content" id="faq1">
+                  <p>
+                    Мы принимаем заказы даже на небольшие тиражи, а для
+                    некоторых видов продукции минимальный тираж составляет всего
+                    10 экземпляров.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq__item">
+                <div class="faq__header" data-toggle="#faq2">
+                  <p>Можно ли заказать индивидуальный дизайн?</p>
+                </div>
+                <div class="faq__content" id="faq2">
+                  <p>
+                    Мы принимаем заказы даже на небольшие тиражи, а для
+                    некоторых видов продукции минимальный тираж составляет всего
+                    10 экземпляров.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq__item">
+                <div class="faq__header" data-toggle="#faq3">
+                  <p>Сколько времени занимает выполнение заказа?</p>
+                </div>
+                <div class="faq__content" id="faq3">
+                  <p>
+                    Мы принимаем заказы даже на небольшие тиражи, а для
+                    некоторых видов продукции минимальный тираж составляет всего
+                    10 экземпляров. Мы принимаем заказы даже на небольшие
+                    тиражи, а для некоторых видов продукции минимальный тираж
+                    составляет всего 10 экземпляров.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="faq__column">
+              <div class="faq__item">
+                <div class="faq__header" data-toggle="#faq4">
+                  <p>Вы доставляете заказы?</p>
+                </div>
+                <div class="faq__content" id="faq4">
+                  <p>
+                    Мы принимаем заказы даже на небольшие тиражи, а для
+                    некоторых видов продукции минимальный тираж составляет всего
+                    10 экземпляров. Мы принимаем заказы даже на небольшие
+                    тиражи, а для некоторых видов продукции минимальный тираж
+                    составляет всего 10 экземпляров. Мы принимаем заказы даже на
+                    небольшие тиражи, а для некоторых видов продукции
+                    минимальный тираж составляет всего 10 экземпляров.
+                  </p>
+                </div>
+              </div>
+              <div class="faq__item">
+                <div class="faq__header" data-toggle="#faq5">
+                  <p>Какие материалы можно выбрать для печати?</p>
+                </div>
+                <div class="faq__content" id="faq5">
+                  <p>
+                    Мы принимаем заказы даже на небольшие тиражи, а для
+                    некоторых видов продукции минимальный тираж составляет всего
+                    10 экземпляров.
+                  </p>
+                </div>
+              </div>
+              <div class="faq__item">
+                <div class="faq__header" data-toggle="#faq6">
+                  <p>
+                    Можно ли получить пробный экземпляр перед основным тиражом?
+                  </p>
+                </div>
+                <div class="faq__content" id="faq6">
+                  <p>
+                    Мы принимаем заказы даже на небольшие тиражи, а для
+                    некоторых видов продукции минимальный тираж составляет всего
+                    10 экземпляров.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="container">
+          <h2>Как нас найти</h2>
+          <div class="contacts__wrapper">
+            <div class="contacts__info">
+              <h3>Офис и произвоздство</h3>
+              <p>Московская область, г. Люберцы, ул. Красная, д. 1, лит. У</p>
+              <span>м. Котельники, МЦД Люберцы 1</span>
+              <h3>Контакты</h3>
+              <a class="contacts__phone" href="tel:84957984475"
+                >8 (495) 798-44-75</a
+              >
+              <a class="contacts__phone" href="tel:84957984475"
+                >8 (495) 798-44-75</a
+              >
+              <a class="contacts__mail" href="mailto:abaris.ra@mail.ru"
+                >abaris.ra@mail.ru</a
+              >
+            </div>
+            <div class="contacts__map">
+              <div id="map" style="width: 600px; height: 400px"></div>
+            </div>
+          </div>
+          <a class="contacts__link" href="#">Перейти в контакты</a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__top">
+            <img src="./images/footer_logo.svg" alt="logo" />
+            <p>
+              Ⓒ 2024  ООО "АБАРИС" Политика конфиденциальности Все права
+              защищены
+            </p>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__contacts">
+              <h3>Контакты</h3>
+              <ul class="footer__list">
+                <li><a href="tel:84957984475">8 (495) 798-44-75</a></li>
+                <li><a href="tel:84959685045">8 (495) 968-50-45</a></li>
+                <li>
+                  <a href="mailto:abaris.ra@mail.ru">abaris.ra@mail.ru</a>
+                </li>
+                <li>
+                  Московская область, г. Люберцы, ул. Красная, д. 1, лит. У
+                </li>
+                <li>Ежедневно: с 9:00 до 18:00</li>
+              </ul>
+            </div>
+            <div class="footer__nav">
+              <h3>Покупателям</h3>
+              <ul class="footer__list">
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">Требования к макетам</a></li>
+                <li><a href="#">Портфолио</a></li>
+                <li><a href="#">Прайс лист</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="footer__nav">
+              <h3>Услуги</h3>
+              <ul class="footer__list">
+                <li><a href="#">Широкоформатная печать</a></li>
+                <li><a href="#">Интерьерная печать</a></li>
+                <li><a href="#">УФ печать</a></li>
+                <li><a href="#">Гибкий неон</a></li>
+                <li><a href="#">Изготовление объемных букв</a></li>
+                <li><a href="#">Фрезеровка материала</a></li>
+                <li><a href="#">Плоттерная резка</a></li>
+                <li><a href="#">Накатка пленки</a></li>
+                <li><a href="#">Монтажные работы</a></li>
+              </ul>
+            </div>
+          </div>
+          <p class="copy-mobile">
+            Ⓒ 2024  ООО "АБАРИС" Политика конфиденциальности Все права защищены
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/main.js"></script>
+    <script src="./js/map.js"></script>
+    <script src="./js/swiper.js"></script>
+  </body>
+</html>
