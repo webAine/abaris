@@ -19,7 +19,7 @@ var slider1 = new Swiper("#slider1", {
     },
   },
   on: {
-    click(event) {
+    click() {
       slider1.slideTo(this.clickedIndex);
     },
   },
@@ -32,6 +32,7 @@ var slider2 = new Swiper("#slider2", {
   spaceBetween: 16,
   speed: 1000,
   freeMode: false,
+  loop: true,
   mousewheel: {
     thresholdDelta: 30,
   },
@@ -46,7 +47,7 @@ var slider2 = new Swiper("#slider2", {
     },
   },
   on: {
-    click(event) {
+    click() {
       slider2.slideTo(this.clickedIndex);
     },
   },

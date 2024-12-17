@@ -236,6 +236,69 @@ header {
 .burger.active .burger__line:nth-child(3) {
   transform: translateY(-6px) rotate(-45deg);
 }
+.breadcrumbs {
+  padding: 32px 0 60px 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.breadcrumbs a,
+.breadcrumbs span {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #7a7a7a;
+}
+.price h2 {
+  margin-bottom: 32px;
+  font-family: "Gantari", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+}
+.price__wrapper {
+  padding: 32px 24px;
+  background: #fafafa;
+  box-shadow: 0px 4px 4px rgba(122, 122, 122, 0.15);
+  border-radius: 20px;
+}
+.price__table--1 {
+  margin-bottom: 32px;
+  width: 100%;
+  border-spacing: 0 16px;
+  border-collapse: separate;
+}
+.price__table--1 thead tr th {
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #3e3e3e;
+  text-align: left;
+}
+.price__table--1 thead {
+  margin-bottom: 32px;
+}
+.price__table--1 tbody tr td,
+.price__table--2 tbody tr td {
+  font-family: "Mulish", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  color: #3e3e3e;
+}
+.price__table--2 {
+  width: 82%;
+  border-spacing: 0 16px;
+  border-collapse: separate;
+}
+.price__wrapper h3 {
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
 .hero {
   padding: 30px 0 60px 0;
 }
@@ -367,6 +430,15 @@ header {
   font-size: 16px;
   line-height: 20px;
 }
+.service-page-main .services {
+  padding-bottom: 0;
+}
+.service-page-main .services__wrapper {
+  display: block;
+}
+.service-page-main .services__list {
+  grid-template-columns: repeat(3, 1fr);
+}
 .services {
   padding: 60px 0;
 }
@@ -423,6 +495,10 @@ header {
   font-weight: 500;
   font-size: 20px;
   line-height: 25px;
+}
+.service-page-main .form2 {
+  margin-top: 0;
+  margin-bottom: 60px;
 }
 .form {
   margin-top: 60px;
@@ -563,10 +639,12 @@ header {
   transition: 1s;
   user-select: none;
   cursor: pointer;
+  filter: grayscale(100%);
 }
 #slider2 .swiper-slide-active {
   width: 688px;
   transition: 1s;
+  filter: none;
 }
 #slider2 .swiper-slide img {
   width: 100%;
@@ -584,6 +662,47 @@ header {
   line-height: 23px;
   text-decoration-line: underline;
   color: #7a7a7a;
+}
+.partners h2 {
+  margin-bottom: 32px;
+}
+.partners__wrapper {
+  overflow: hidden;
+  position: relative;
+}
+.partners__list {
+  display: flex;
+  gap: 34px;
+  width: calc(200%);
+  animation: scroll 10s linear infinite;
+}
+.partners__list::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to right, white, transparent 20%, transparent 80%, white);
+  pointer-events: none;
+  z-index: 1;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.partners__item {
+  height: 40px;
+  flex: 0 0 auto;
+}
+.partners__item img {
+  height: 100%;
+  filter: grayscale(100%);
 }
 .reviews {
   padding: 60px 0;
@@ -879,7 +998,7 @@ footer {
 .footer__list a,
 .footer__list li {
   font-family: "Mulish", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 20px;
   line-height: 25px;
   color: #ffffff;

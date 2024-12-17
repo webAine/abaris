@@ -47,6 +47,9 @@
   .header__menu li {
     flex-shrink: 0;
   }
+  .breadcrumbs {
+    display: none;
+  }
   .hero {
     padding: 24px 0 22px 0;
   }
@@ -450,6 +453,14 @@
   }
   .delivery {
     padding-top: 24px;
+  }
+  .delivery h2 {
+    display: none;
+  }
+  .delivery__receive h3,
+  .delivery__payment h3 {
+    font-size: 20px;
+    line-height: 24px;
   }
   .delivery__item-text p {
     font-weight: 600;
